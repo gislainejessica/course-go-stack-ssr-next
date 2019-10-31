@@ -23,7 +23,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../src/hocs/withAnalytics */ "./src/hocs/withAnalytics.js");
 
 
-var _jsxFileName = "/home/gislaine/course-go-stack-ssr-next/pages/users.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
@@ -33,68 +32,19 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 var User = function User(_ref) {
   var users = _ref.users;
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, __jsx("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, " Usu\xE1rios ")), __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, "Users"), __jsx("img", {
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, null, __jsx("title", null, " Usu\xE1rios ")), __jsx("h1", null, "Users"), __jsx("img", {
     src: "/static/robo3t.png",
     width: "70",
-    alt: "robot",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, users.map(function (user) {
+    alt: "robot"
+  }), __jsx("ul", null, users.map(function (user) {
     return __jsx("li", {
-      key: user.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19
-      },
-      __self: this
-    }, " ", user.login, " ");
+      key: user.id
+    }, " ", user.login, __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      href: "/users/".concat(user.login)
+    }, __jsx("a", null, " Acessar Perfil")));
   })), __jsx(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    href: "/",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, " Voltar ")));
+    href: "/"
+  }, __jsx("a", null, " Voltar ")));
 };
 /** Propriedade estática das paginas pra fazer uma requisição que vai retornar
  um objeto para o componente, para que o componente seja executada no Backend */
@@ -131,4 +81,4 @@ _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(f
 /***/ })
 
 })
-//# sourceMappingURL=users.js.8eb6395e40a1e1a36a94.hot-update.js.map
+//# sourceMappingURL=users.js.2cee1933f2f23363f976.hot-update.js.map

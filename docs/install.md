@@ -30,3 +30,8 @@ Pastas
 - Page => index.js users.js _ducument.js
 - src/hocs => withAnalytics.js
 
+yarn add next-routes
+
+"dev": "node server.js",
+"start": "NODE_ENV=production node server.js",
+

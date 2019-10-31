@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
+import withAnalytics from '../src/hocs/withAnalytics'
 
 const Home = () => {
   return (
@@ -8,12 +9,13 @@ const Home = () => {
       <Head>
         <title> Home </title>
       </Head>
-      <h1> Hello world </h1>
+      <img src="/static/taca.jpg" width="200" alt="taca"/>
+      <h1> Home sweet Home </h1>
       <Link href="/users">
-        <a>Usuários</a>
+        <a> Usuários </a>
       </Link>
     </div>
   )
 }
 
-export default Home
+export default withAnalytics()(Home)

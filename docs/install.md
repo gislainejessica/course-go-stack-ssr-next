@@ -23,3 +23,10 @@
 Next só carrega usando o servidor na primeira pagina da aplicação, 
 o resto das paginas é carregada pelo navegador.
 
+- yarn add react-ga
+
+---
+Pastas 
+- Page => index.js users.js _ducument.js
+- src/hocs => withAnalytics.js
+

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2081,9 +2081,9 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./pages/users.js":
+/***/ "./pages/index.js":
 /*!************************!*\
-  !*** ./pages/users.js ***!
+  !*** ./pages/index.js ***!
   \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2092,47 +2092,35 @@ if (false) {} else {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/hocs/withAnalytics */ "./src/hocs/withAnalytics.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/hocs/withAnalytics */ "./src/hocs/withAnalytics.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_4__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
 
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_4___default.a.h1.withConfig({
+  displayName: "pages__Title",
+  componentId: "sc-1vj3ph0-0"
+})(["color:#069;font-size:40px;"]);
 
-const User = ({
-  users
-}) => {
-  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, __jsx("title", null, " Usu\xE1rios ")), __jsx("h1", null, "Users"), __jsx("img", {
-    src: "/static/robo3t.png",
-    width: "70",
-    alt: "robot"
-  }), __jsx("ul", null, users.map(user => __jsx("li", {
-    key: user.id
-  }, " ", user.login, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: `/users/${user.login}`
-  }, __jsx("a", null, " Acessar Perfil"))))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/"
-  }, __jsx("a", null, " Voltar ")));
-};
-/** Propriedade estática das paginas pra fazer uma requisição que vai retornar
- um objeto para o componente, para que o componente seja executada no Backend */
-
-
-User.getInitialProps = async () => {
-  const response = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('https://api.github.com/orgs/rocketseat/members');
-  return {
-    users: response.data
-  };
+const Home = () => {
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, null, __jsx("title", null, " Home ")), __jsx("img", {
+    src: "/static/taca.jpg",
+    width: "200",
+    alt: "taca"
+  }), __jsx(Title, null, " Home sweet Home "), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/users"
+  }, __jsx("a", null, " Usu\xE1rios ")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_4__["default"])()(User));
+/* harmony default export */ __webpack_exports__["default"] = (Object(_src_hocs_withAnalytics__WEBPACK_IMPORTED_MODULE_3__["default"])()(Home));
 
 /***/ }),
 
@@ -2174,26 +2162,15 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!******************************!*\
-  !*** multi ./pages/users.js ***!
+  !*** multi ./pages/index.js ***!
   \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/gislaine/course-go-stack-ssr-next/pages/users.js */"./pages/users.js");
+module.exports = __webpack_require__(/*! /home/gislaine/course-go-stack-ssr-next/pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "axios":
-/*!************************!*\
-  !*** external "axios" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("axios");
 
 /***/ }),
 
@@ -2351,6 +2328,17 @@ module.exports = require("react-ga");
 
 /***/ }),
 
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -2363,4 +2351,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=users.js.map
+//# sourceMappingURL=index.js.map

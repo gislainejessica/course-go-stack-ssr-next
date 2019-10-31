@@ -35,3 +35,10 @@ yarn add next-routes
 "dev": "node server.js",
 "start": "NODE_ENV=production node server.js",
 
+yarn add styled-components
+
+yarn add babel-plugin-styled-components -D
+
+.babelrc
+
+

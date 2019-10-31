@@ -5,6 +5,11 @@
       "ssr": true,
       "displayName": true,
       "preProcess": false
-    }]
+    }],
+    [
+      "babel-plugin-root-import", {
+        "rootPathSuffix": "src"
+      }
+    ]
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-import withAnalytics from '../src/hocs/withAnalytics'
+import withAnalytics from '~/hocs/withAnalytics'
 
 const Detail = ({ user }) => (
   <div>
@@ -14,7 +14,6 @@ const Detail = ({ user }) => (
 Detail.getInitialProps = async ({query}) => {
   const response = await axios.get(
     `https://api.github.com/users/${query.user}`)
-  console.log(response.data)
   return { user : response.data }
 }
 

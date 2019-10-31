@@ -40,5 +40,5 @@ yarn add styled-components
 yarn add babel-plugin-styled-components -D
 
 .babelrc
-
+yarn add babel-plugin-root-import -D
 
